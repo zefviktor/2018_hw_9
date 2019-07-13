@@ -1,0 +1,123 @@
+@mixin button
+    display: flex
+    justify-content: center
+    &-text
+      background-color: transparent
+      border-radius: 100px
+      font-family: $secondary__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__bold
+      text-transform: uppercase
+      text-align: center
+      padding: 15px 25px
+      color: $default-color
+      border: 1px solid $default-color
+
+@mixin button-dark
+  display: flex
+  justify-content: center
+  &-text
+    background-color: $secondary-color
+    border-radius: 100px
+    font-family: $secondary__font-family
+    font-size: $extra-tiny__font-size
+    font-weight: $font-weight__bold
+    text-transform: uppercase
+    text-align: center
+    padding: 15px 25px
+    color: $default-color
+    border: 1px solid $secondary-color
+
+@mixin small-icon
+  width: 72px
+  height: 71px
+
+@mixin avatar-icon
+  width: 270px
+  height: 270px
+
+@mixin normal-icon
+  width: 320px
+  height: 200px
+
+@mixin title-content
+  padding-top: 99px
+  margin: 0 auto
+  max-width: 80%
+  display: flex
+  justify-content: center
+  font-size: $normal__font-size
+  font-family: $secondary__font-family
+  font-weight: $font-weight__extra-bold
+  text-transform: uppercase
+  letter-spacing: -0.65px
+
+@mixin subtitle-content
+  padding-top: 16px
+  margin: 0 auto
+  max-width: 80%
+  display: inline-block
+  opacity: 0.8
+  font-family: $secondary__font-family
+  font-size: $extra-tiny__font-size
+  font-weight: $font-weight__normal
+
+@mixin after-border
+  content: ""
+  display: block
+  padding-top: 20px
+  width: 40px
+  margin: 0 auto
+  opacity: 0.8
+
+@mixin hover-booming-show
+  &-text
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    flex-direction: column
+    opacity: 0
+    &:hover
+      background: linear-gradient(to right, rgba(2, 85, 99, 0.7),rgba(45, 57, 80, 0.9))
+      background-size: cover
+      transition: .5s ease
+      opacity: 0.9
+    &-title
+      padding-bottom: 11px
+      color: $default-color
+      font-family: $default__font-family
+      font-size: $tiny__font-size
+      font-weight: $font-weight__bold
+      text-transform: uppercase
+    &-subtitle
+      color: $default-color
+      font-family: $default__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__normal
+    &-subtext
+      color: $default-color
+      font-family: $default__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__bold
+      text-transform: uppercase
+      letter-spacing: 0.33px
+      &:after
+        @include after-border
+        border-bottom: 2px solid $default-color
+
+@mixin hover-subscription
+
+  &:before
+    content: ""
+    position: absolute
+    display: block
+    top: -35px
+    width: 100%
+    margin: 0 auto
+    border-top: 5px solid $secondary-color
+
+

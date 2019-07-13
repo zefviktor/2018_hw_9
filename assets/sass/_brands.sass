@@ -1,0 +1,48 @@
+.brands
+  height: auto
+  text-align: center
+  &__background
+    background-color: $secondary-background
+  &__icon
+    padding-top: 43px
+    padding-bottom: 43px
+    display: flex
+    text-align: center
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap
+    @media (max-width: 1000px)
+      flex-direction: column
+      justify-content: center
+    &-coca-cola
+      height: 44px
+      width: 135px
+      background: url("../img/Coca-Cola-logo.png") center / cover no-repeat
+      @media (max-width: 1000px)
+        margin-top: 40px
+    &-dropbox
+      height: 42px
+      width: 154px
+      background: url("../img/Dropbox_logo.png") center / cover no-repeat
+      @media (max-width: 1000px)
+        margin-top: 40px
+    &-intel
+      height: 64px
+      width: 96px
+      background: url("../img/Intel-logo.png") center / cover no-repeat
+      @media (max-width: 1000px)
+        margin-top: 40px
+    &-zendesk
+      height: 39px
+      width: 166px
+      background: url("../img/Zendesk_logo.png") center / cover no-repeat
+      @media (max-width: 1000px)
+        margin-top: 40px
+    &-nokia
+      height: 25px
+      width: 150px
+      background: url("../img/Nokia_logo.png") center / cover no-repeat
+      @media (max-width: 1000px)
+        margin-top: 40px
+
+

@@ -1,0 +1,84 @@
+.pricing
+  height: auto
+  text-align: center
+  &__background
+    background-color: $default-background
+  &__title
+    @include title-content
+    color: $secondary-color
+  &__subtitle
+    @include subtitle-content
+    color: $secondary-color
+    &:after
+      @include after-border
+      border-bottom: 2px solid $secondary-color
+  &__subscription
+    padding-top: 61px
+    padding-bottom: 116px
+    display: flex
+    @media (max-width: 1200px)
+      max-width: 1200px
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      justify-content: center
+      align-items: center
+    &-content
+      border: 1px solid rgba(221, 221, 221, 0.5)
+      position: relative
+      width: 100%
+      max-width: 386px
+      @media (max-width: 1200px)
+        margin-top: 20px
+        margin-bottom: 20px
+      @media (max-width: 400px)
+        max-width: 286px
+      &:hover
+        border-top: transparent
+        @include hover-subscription
+    &-title
+      padding-top: 29px
+      color: #485563
+      font-family: $default__font-family
+      font-size: 20px
+      font-weight: $font-weight__bold
+    &-price
+      padding-top: 23px
+      display: block
+      color: #485563
+      font-family: $default__font-family
+      font-size: $extreme__font-size
+      font-weight: $font-weight__normal
+    &-subtitle
+      padding-top: 8px
+      padding-bottom: 32px
+      display: block
+      color: #29323c
+      font-family: $secondary__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__light
+      border-bottom: 1px solid $default-color
+    &-text
+      padding-top: 83px
+      color: #29323c
+      font-family: $secondary__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__normal
+      line-height: 40px
+      padding-left: 76px
+      padding-right: 76px
+      @media (max-width: 800px)
+        line-height: 30px
+      @media (max-width: 400px)
+        line-height: 20px
+        padding-left: 50px
+        padding-right: 50px
+      @media (max-width: 300px)
+        line-height: 20px
+        padding-left: 20px
+        padding-right: 20px
+    &-button
+      padding-top: 91px
+      padding-bottom: 36px
+      @include button-dark
+
+
